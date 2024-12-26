@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nacos YAML 验证器</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YAML 格式验证</h2>
+        <div class="status-container">
+            <div id="status" class="status">等待检查...</div>
+        </div>
+        <div class="result-container">
+            <pre id="error-message" class="error-message"></pre>
+        </div>
+        <button id="check-button" class="check-button">检查格式</button>
+    </div>
+    <script src="lib/js-yaml.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html> 

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Nacos YAML 验证器",
+  "version": "1.0",
+  "description": "验证 Nacos 控制台中 YAML 配置格式是否正确",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["lib/js-yaml.min.js", "content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+} 

@@ -1,0 +1,96 @@
+/* 基础样式 */
+body {
+    width: 300px;
+    margin: 0;
+    padding: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+/* 标题样式 */
+h2 {
+    margin: 0 0 16px 0;
+    color: #2c3e50;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* 状态容器 */
+.status-container {
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+/* 状态样式 */
+.status {
+    text-align: center;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.status.valid {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status.invalid {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* 错误消息样式 */
+.result-container {
+    margin-bottom: 16px;
+}
+
+.error-message {
+    display: none;
+    margin: 0;
+    padding: 12px;
+    background-color: #fff3f3;
+    border: 1px solid #ffa7a7;
+    border-radius: 4px;
+    color: #d63031;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* 按钮样式 */
+.check-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.check-button:hover {
+    background-color: #0056b3;
+}
+
+.check-button:active {
+    background-color: #004085;
+}
+
+/* 动画效果 */
+.status, .error-message {
+    transition: all 0.3s ease;
+} 
